@@ -6,12 +6,17 @@
 <title>Made — Cypress</title>
 <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body data-page="made">
 <div class="plain">
+
   <h1>Made</h1>
-  <p>Nothing here yet. This page will list the things I've finished.</p>
-  <div class="albums"></div>
-  <p style="margin-top:3em"><a class="back" href="../">← back</a></p>
+
+  <div class="albums" data-made></div>
+  <p class="empty" data-empty hidden>Nothing here yet.</p>
+
+  <p class="backline"><a class="back" href="../">← back</a></p>
 </div>
+
+<script src="../app.js"></script>
 </body>
 </html>

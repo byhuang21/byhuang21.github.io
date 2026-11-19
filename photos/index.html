@@ -6,12 +6,17 @@
 <title>Photos — Cypress</title>
 <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body data-page="photos">
 <div class="plain">
+
   <h1>Photos</h1>
-  <p>Nothing here yet. This page will list the albums, one line each.</p>
-  <div class="albums"></div>
-  <p style="margin-top:3em"><a class="back" href="../">← back</a></p>
+
+  <div class="albums" data-albums></div>
+  <p class="empty" data-empty hidden>Nothing here yet.</p>
+
+  <p class="backline"><a class="back" href="../">← back</a></p>
 </div>
+
+<script src="../app.js"></script>
 </body>
 </html>

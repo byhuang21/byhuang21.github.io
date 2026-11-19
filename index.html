@@ -6,25 +6,23 @@
 <title>Cypress</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="home">
 <div class="wrap">
 
-  <h1>Cypress</h1>
+  <h1 data-name>Cypress</h1>
 
-  <!-- 我正在做的东西 -->
   <section class="now">
-    <div class="frame">gif / animation — what I'm on right now</div>
-    <p class="cap">A short line about whatever this is.</p>
+    <div class="frame" data-frame></div>
+    <p class="cap" data-caption></p>
   </section>
 
-  <nav>
-    <a href="photos/"><span>Photos</span><span class="arrow">↗</span></a>
-    <a href="made/"><span>Made</span><span class="arrow">↗</span></a>
-  </nav>
+  <nav data-doors></nav>
 
-  <footer>Cypress-Site · v0</footer>
+  <footer>Cypress-Site</footer>
 </div>
 
 <div class="lodger">the<br>character<br>sits<br>here</div>
+
+<script src="app.js"></script>
 </body>
 </html>

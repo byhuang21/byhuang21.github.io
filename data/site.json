@@ -1,0 +1,12 @@
+{
+  "name": "Cypress",
+  "now": {
+    "image": "hero.png",
+    "alt": "a small room, seen from the front, one person reading under a lamp",
+    "caption": "CPA studying in progress."
+  },
+  "doors": [
+    { "label": "Photos", "href": "photos/" },
+    { "label": "Made", "href": "made/" }
+  ]
+}
