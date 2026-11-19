@@ -16,6 +16,9 @@ const getJSON = async (path) => {
   return res.json();
 };
 
+/* 封面路径：绝对路径（/media/...）原样用；相对路径按 site 根解析 */
+const asset = (p) => (/^(\/|https?:)/.test(p) ? p : `../${p}`);
+
 /* ---------- 首页 ---------- */
 async function renderHome() {
   const d = await getJSON('data/site.json');
@@ -68,7 +71,7 @@ async function renderAlbums() {
     const cover = el('span', 'cover');
     if (a.cover) {
       const img = el('img');
-      img.src = `../${a.cover}`;
+      img.src = asset(a.cover);
       img.alt = '';
       cover.appendChild(img);
     }
@@ -103,7 +106,7 @@ async function renderMade() {
     const cover = el('span', 'cover');
     if (it.cover) {
       const img = el('img');
-      img.src = `../${it.cover}`;
+      img.src = asset(it.cover);
       img.alt = '';
       cover.appendChild(img);
     }
